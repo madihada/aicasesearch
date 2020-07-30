@@ -1,0 +1,46 @@
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+
+{% extends "base.html" %}
+
+
+{% block content %}
+<br><br>
+<form action="/keywords" method="get">{% csrf_token %}
+    <input type="submit" value="검색으로 이동"
+         name="Submit" id="frm1_submit" />
+</form>
+
+    {% for c in key_adding %}
+        {{c}}
+    {% endfor %}
+
+    {% for k in key %}
+   <li> {{k}}</li>
+    {% endfor %}
+
+    {% for c in content %}
+        <br><br><p><li>{{c}}</li></p>
+    {% endfor %}
+
+    {% for c in content2 %}
+        <p>{{c}}</p><br><br><br><br>
+    {% endfor %}
+<br><br>
+<form action="/keywords" method="get">
+    <input type="submit" value="검색으로 이동"
+         name="Submit" id="frm1_submit" />
+    </form>
+
+    <!--{% for post in posts %}-->
+
+        <!--<br><br>{{ post.title }}<br>-->
+        <!--{{ post.subtitle }}<br><br>-->
+        <!--{{ post.content }}<br><br><br><br><br><br>-->
+    <!--{% endfor %}-->
+
+
+{% endblock %}

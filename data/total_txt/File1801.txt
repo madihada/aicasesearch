@@ -1,0 +1,27 @@
+시가불인정감정기관지정처분취소
+[서울행정법원, 2017. 2. 3., 2016구합72648]
+
+【참조조문】
+헌법 제12조, 제37조 제2항, 제75조, 제95조, 제107조 제2항, 구 상속세 및 증여세법(2015. 12. 15. 법률 제13557호로 개정되기 전의 것) 제60조 제1항, 제2항, 구 상속세 및 증여세법 시행령(2016. 2. 5. 대통령령 제26960호로 개정되기 전의 것) 제49조 제1항 제2호, 제3항, 구 상속세 및 증여세법 시행규칙(2016. 3. 21. 기획재정부령 제557호로 개정되기 전의 것) 제15조 제3항
+
+【전문】
+【원 고】 주식회사 제일감정평가법인 (소송대리인 법무법인(유한) 율촌 담당변호사 최완 외 5인)
+
+【피 고】 서울지방국세청장 (소송대리인 정부법무공단 담당변호사 배진재 외 1인)
+
+【변론종결】2016. 12. 21.
+
+【주 문】
+1. 피고가 2016. 8. 18. 원고들에 대하여 한 시가불인정 감정기관 지정처분을 모두 취소한다.
+2. 소송비용은 피고가 부담한다.
+
+
+【이 법원의 위헌 규칙 심사 결과】구 상속세 및 증여세법 시행규칙(2016. 3. 21. 기획재정부령 제557호로 개정되기 전의 것) 제15조 제3항은 헌법에 위반된다.
+
+【이 유】 1. 처분의 경위
+
+ 가. 주식회사 호텔롯데(이하 ‘호텔롯데’라 한다)는 2013. 10. 1. 구 롯데제주리조트 주식회사(이하 ‘롯데제주’라 한다)를 흡수합병하였는데, 이에 앞서 합병 비율을 산정하기 위하여 원고들에게 롯데제주가 소유한 유형자산(이하 ‘이 사건 유형자산’이라 한다)의 2013. 6. 30.을 기준시점으로 한 시가를 감정평가하도록 의뢰하였다. 원고들은 2013. 7. 31. 이 사건 유형자산에 대한 감정평가서를 작성하였다.
+ 나. 이 사건 유형자산은 ○○○○○ 리조트의 부지(이하 ‘이 사건 리조트 부지’라 한다) 및 건물, 이 사건 리조트 부지에 인접한 제주특별자치도 서귀포시 (이하 주소 생략) 이외 8필지(이하 ‘이 사건 개발예정지’라 한다), 롯데제주가 소유한 기타 토지 8필지(이하 ‘이 사건 보유 토지’라 한다), 리조트 내 구축물, 기계장치, 차량운반구, 집기 비품 등으로 구성되어 있다.
+ 다. 피고는 호텔롯데에 대한 세무조사를 실시하면서 호텔롯데와 롯데제주 사이의 합병 비율의 적정성을 조사하기 위하여 주식회사 한국감정원과 주식회사 가온감정평가법인(이하 양 회사를 통틀어 ‘재감정기관들’이라 한다)에 2013. 8. 15.을 기준시점으로 하여 이 사건 유형자산에 대한 재감정을 의뢰하였다. 재감정기관들은 2016. 2.~3.경 이 사건 유형자산에 대한 감정평가서를 작성하였다.
+ 라. 이 사건 유형자산 중 토지와 건설 중인 자산(건설가계정)에 대한 원고들의 감정평가액과 재감정기관들의 감정평가액은 아래 표와 같다.
+cccccccccccccchlxXcc*UccUDccccccMdcˆJˆJcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc;ZZBxLIlX€lLcc,xx‰caacUFcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccuWc‰ZZBx>JKccXlhcJctcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccŽcccOBZBxcccccccccccccccccccccccccccccccccccccccctciccccccccccccccccccccccccccccccccccc‰…cc€ckPccccMdcccccccccccccccccccccccccccccccccccccccct‡cJGcccccccccccccc.ecccQWccetcc€bcckŽ,/p‡cJˆƒJcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccJcJccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccciyQej…@‰cc‡eˆccc†hcccxUcJctcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccct‡cJcccccccccccccccccccccccccccccccccccMOcccccccbxcccMicccccccccccccccccccccccccccccccccccccccctcJcccccccccccccc.Zccc6Wcc…cccccU@acvicˆJˆƒJccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccZOcc_oicccuccccccccnZc%cU_ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc€Q‰c?bcZOcc_=`ccc4uccceJcictccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccctci ccccccccccccccccccccccccccccccccccc1nccccccc'vnccvpQXIˆcccccccccccccccccccccccccccccccccccJci

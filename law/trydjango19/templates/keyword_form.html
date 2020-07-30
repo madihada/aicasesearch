@@ -1,0 +1,366 @@
+<!--<!DOCTYPE html>-->
+<html>
+    <head>
+        <title>AI 판례검색</title>
+    </head>
+
+    <style type="text/css">
+        <!--body {-->
+            <!--padding: 0;-->
+            <!--margin: 0;-->
+            <!--background-color: #FFD200;-->
+            <!--color: #1A1A1D;-->
+
+        <!--}-->
+        <!--h1 {-->
+            <!--font-size: 3em;-->
+            <!--padding: 0;-->
+            <!--margin: 290;-->
+            <!--text-align: center;-->
+            <!--font-family:'돋음', Dotum, AppleGothic,Arial,sans-serif;-->
+            <!--&lt;!&ndash;position: absolute;&ndash;&gt;-->
+            <!--&lt;!&ndash;top: 50%&ndash;&gt;-->
+            <!--left: 50%;-->
+            <!--&lt;!&ndash;transform: translateX(-50%) translateY(-50%);&ndash;&gt;-->
+        <!--}-->
+        <!--p {-->
+            <!--&lt;!&ndash;margin: 100;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;position: absolute;&ndash;&gt;-->
+            <!--&lt;!&ndash;transform: translateX(-50%) translateY(-50%);&ndash;&gt;-->
+            <!--left: 50%;-->
+            <!--&lt;!&ndash;top: 50%&ndash;&gt;-->
+        <!--}-->
+        <!--input {-->
+            <!--position: absolute;-->
+            <!--transform: translateX(-50%) translateY(-50%);-->
+            <!--color: #1A1A1D;-->
+            <!--left: 50%;-->
+            <!--top: 80%-->
+
+        <!--}-->
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.google-header
+{
+    width: 100%;
+    max-height: 500px;
+    float: right;
+    font-family: sans-serif;
+}
+.google-header img
+{
+    max-width: 100%;
+    border-radius: 50%;
+}
+.gmail-img
+{
+    border-radius: 50%;
+    width: 40px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.header-icons
+{
+    float: right;
+    width: 200px;
+    margin-top: 28px;
+    margin-right: 10px;
+}
+.header-icons .fa-th
+{
+    font-size: 20px;
+    margin-top: 5px;
+    color: gray;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.header-icons .fa-th:hover
+{
+    color: #000;
+}
+.header-icons .fa-bell
+{
+    width: 20px;
+    height: 20px;
+    background-color: #737373;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 5px;
+    float: right;
+    cursor: pointer;
+}
+.header-icons .fa-bell:hover
+{
+    background-color: #000;
+}
+.header-icons a
+{
+    float: right;
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 4.5px;
+}
+.header-icons a:hover
+{
+    color: gray;
+
+}
+.google-search
+{
+    font-family: sans-serif;
+    padding: 20px;
+}
+.google-image img
+{
+    margin: 100px auto 60px;
+    width: 250px;
+    cursor: pointer;
+}
+.input-group
+{
+    margin: 13px auto 10px;
+    border-radius: 20px;
+    max-width: 550px;
+    background-color: #F5F5F5;
+}
+.form-control
+{
+    border: none!important;
+    border-radius: 20px!important;
+    background-color: #f5f5f5!important;
+}
+.input-group-text
+{
+    background: transparent !important;
+    border: none!important;
+}
+.input-group .fa
+{
+    color: #007bff;
+    cursor: pointer;
+}
+.form-control:focus
+{
+    box-shadow: none!important;
+}
+.bookmarks
+{
+    width: 400px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.col-md-4
+{
+    width: 120px !important;
+    padding: none !important;
+}
+.site
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    white-space:nowrap;
+}
+
+.site:hover
+{
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.site p
+{
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 12px;
+    text-align: center;
+}
+.site .fa
+{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    margin-left: 35px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    text-align: center;
+    padding-top: 12px;
+}
+.fa-gavel
+{
+    color: #4088ac;
+}
+.fa-clipboard-list
+{
+    color: #0179b4;
+}
+.fa-book
+{
+    color: #025d8a;
+}
+.fa-clone
+{
+    color:#366880;
+}
+.fa-copy
+{
+    color: #32586b;
+}
+    </style>
+
+    <!--<body>-->
+        <!--&lt;!&ndash;<h1>AI 판례검색</h1>&ndash;&gt;-->
+
+        <!--<form method = 'POST' action="">{% csrf_token %}-->
+        <!--&lt;!&ndash;<p>검색한 단어와 일치하는 필수 단어를 입력합니다.</p>&ndash;&gt;-->
+        <!--<p>{{ form.as_p }}</p>-->
+        <!--<p><input type='submit' class='btn btn-default' value='키워드 검색'  /></p>-->
+        <!--&lt;!&ndash;<p>유사한 의미를 가진 단어를 검색합니다.</p>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<p><input type="text" name="q_key" placeholder="키워드 검색" value="{{ request.GET.q }}" /></p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p><input type='submit' class='btn btn-default' value='키워드 검색'  /></p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p><input type="text" name="q_ai" placeholder="키워드 검색" value="{{ request.GET.q }}" /></p>&ndash;&gt;-->
+    <!--</body>-->
+<!--</html>-->
+
+
+
+
+
+<html lang="ko">
+ <head>
+    <meta charset="utf-8">
+
+    <title>Google Chrome page</title>
+     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+ </head>
+ <body>
+    <div class="google-header">
+    <div class="gmail-img">
+    {% load static %}
+    <img src="{% static 'img/sim.png' %}" title="Google Account: tlarbgus89@example.com">
+    </div>
+        <div class="header-icons">
+        <i class="fa fa-bell"></i>
+        <i class="fa fa-th"></i>
+        <a href="#">내 정보</a>
+        <a href="#">내 검색</a>
+
+        </div>
+    </div>
+        <div class="google-search">
+            <div class="google-image text-center" title="Google">
+            {% load static %}
+            <img src="{% static 'img/ai_case_search_logo.png' %}"/>
+            </div>
+
+            <!--<div class="input-group text-center">-->
+            <!--<span class="input-group-text" ><i class="fa fa-search"  title="Search by voice" ></i></span>-->
+
+
+            <!--<form action="/contact" method="get">-->
+
+            <!--<input type="text" name="q" value="{{ q }}" class="form-control" placeholder="핵심 키워드를 입력하세요!">-->
+            <!--<div class="input-group-append">-->
+            <!--<span class="input-group-text"><i class="fa fa-microphone" title="Search by voice"></i></span>-->
+            <!--</div>-->
+
+            <!--</form>-->
+            <!--</div>-->
+
+            <form action="/contact" method="get">
+
+            <div class="input-group text-center">
+            <span class="input-group-text"><i class="fa fa-searchno" title="Search by voice"></i></span>
+
+            <input type="text" name="q" value="{{ q }}" class="form-control" placeholder="핵심 키워드를 입하세요!">
+            <div class="input-group-append">
+            <span class="input-group-text"><i class="fa fa-microphone" title="Search by voice"></i></span>
+            </div>
+            </form>
+            </div>
+
+            <form action="/contact" method="get">
+
+            <div class="input-group text-center">
+            <span class="input-group-text"><i class="fa fa-searchno" title="Search by voice"></i></span>
+
+            <input type="text" name="q2" value="{{ q2 }}" class="form-control" placeholder="핵심 키워드의 유사어를 추가세요!">
+            <div class="input-group-append">
+            <span class="input-group-text"><i class="fa fa-microphone" title="Search by voice"></i></span>
+            </div>
+            </form>
+            </div>
+
+        </div>
+
+        <div class="bookmarks">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="site" title="Gmail">
+                        <i class="fa fa-gavel"></i>
+                            <p>대법원 판례</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="site" title="facebook">
+                        <i class="fa fa-clipboard-list"></i>
+                            <p>하급심 판례</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="site" title="Youtube">
+                        <i class="fa fa-book"></i>
+                            <p>논문</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="site" title="Linkedin">
+                        <i class="fa fa-clone"></i>
+                            <p>판레형석</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="site" title="Instagram">
+                        <i class="fa fa-copy"></i>
+                            <p>법령</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="site" title="Add Shortcut">
+                        <i class="fa fa-plus"></i>
+                            <p>기타</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ </body>
+</html>
+
+
+
+
+
