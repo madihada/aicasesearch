@@ -15,7 +15,7 @@ configobj==5.0.6
 constantly==15.1.0
 cryptography==2.1.4
 distro-info===0.18ubuntu0.18.04.1
-Django==1.9
+Django==2.2.24
 docutils==0.14
 freeze==3.0
 gensim==3.7.3
