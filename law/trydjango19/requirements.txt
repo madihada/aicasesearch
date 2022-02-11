@@ -39,7 +39,7 @@ netifaces==0.10.4
 numpy==1.16.4
 oauthlib==2.0.6
 PAM==0.4.2
-protobuf==3.8.0
+protobuf==3.15.0
 pyasn1==0.4.2
 pyasn1-modules==0.2.1
 pycodestyle==2.5.0
