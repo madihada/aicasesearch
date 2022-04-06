@@ -66,7 +66,7 @@ smart-open==1.8.4
 sqlparse==0.3.0
 ssh-import-id==5.7
 systemd-python==234
-Twisted==17.9.0
+Twisted==22.2.0
 ufw==0.36
 urllib3==1.25.3
 zope.interface==4.3.2
